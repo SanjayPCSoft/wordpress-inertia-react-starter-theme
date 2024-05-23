@@ -9,10 +9,10 @@
 
 <body>
     <?php get_header(); ?>
-    <h1>App.php</h1>
-    <?php bb_inject_inertia(); ?>
 
-    <?php wp_footer(); ?>
+    <?php the_content(); ?>
+
+    <?php get_footer(); ?>
 </body>
 
 </html>

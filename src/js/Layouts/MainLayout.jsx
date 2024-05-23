@@ -5,14 +5,19 @@ import { Link } from '@inertiajs/react'
 export default function MainLayout({ children }) {
     return (
         <>
-            <header>
-                <Link href="/">Home</Link>
-                <Link href="/about">About</Link>
-                <Link href="/kndsalkfnaslkd">Contact</Link>
-            </header>
+
             <main>
                 {children}
             </main>
+            <header style={{
+                display: 'flex',
+                gap: '2rem',
+                padding: '1rem',
+            }}>
+                <Link href="/">Home</Link>
+                <Link href="/sample-page">Sample</Link>
+                <a href="/kndsalkfnaslkd">404</a>
+            </header>
         </>
 
     )

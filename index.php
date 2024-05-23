@@ -7,9 +7,3 @@ if (is_single()) {
         'post' => get_post(),
     ]);
 }
-
-if (is_page()) {
-    return Inertia::render('Page', [
-        'page' => get_post(),
-    ]);
-}

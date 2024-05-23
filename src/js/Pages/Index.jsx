@@ -1,21 +1,16 @@
 
-import { Link, usePage } from '@inertiajs/react'
+import { usePage } from '@inertiajs/react'
 import React from 'react'
+import MainLayout from '../Layouts/MainLayout'
 
 export default function Index() {
     const a = usePage().props
-
     return (
-        <div>Hello world home
-            <p>
-                <Link href='/'>home</Link>
-                <Link href='/404/'>404</Link>
-            </p>
-            <nav>
-                <Link href="/this-page-does-not-exist">404 Page</Link>
-                <Link href="/sample-page">Sample Page</Link>
-            </nav>
-        </div>
+        <MainLayout>
+            <div>Homepage</div>
+            <p dangerouslySetInnerHTML={{ __html: a?.page?.post_content }} />
+            <p>Comming from Inertia js</p>
+        </MainLayout>
 
     )
 }

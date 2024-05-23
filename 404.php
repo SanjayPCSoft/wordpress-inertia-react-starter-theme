@@ -1,2 +1,4 @@
 <?php
-echo "404";
+use BoxyBird\Inertia\Inertia;
+
+return Inertia::render('NotFound');
